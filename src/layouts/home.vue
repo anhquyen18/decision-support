@@ -64,8 +64,8 @@
         </div>
       </a-layout-content>
     </a-layout>
+    <FeatureInfoPopup @showChart="showChart"></FeatureInfoPopup>
   </a-layout>
-  <FeatureInfoPopup @showChart="showChart"></FeatureInfoPopup>
 </template>
 
 <script>
@@ -79,6 +79,7 @@ import { mapState } from '../stores/map-state';
 import { storeToRefs } from 'pinia';
 import runMap from '../js/map.js';
 import FeatureInfoPopup from '../components/ol-tools/feature-info-popup.vue';
+// import FeatureInfoPopup from '../components/ol-tools/feature-info-popup.vue';
 import LayerManager from '../components/ol-tools/layer-manager.vue';
 
 import { Map, View } from 'ol';
