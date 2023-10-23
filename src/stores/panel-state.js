@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 export const panelState = defineStore('panel', {
   state: () => ({
-    detailPanelState: true,
+    detailPanelState: false,
     chartPanelState: false,
   }),
 
